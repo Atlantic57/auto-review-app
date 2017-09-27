@@ -1,0 +1,19 @@
+{
+    "name": "auto-review-app",
+    "addons": [
+      {
+        "plan": "mongolab:sandbox"
+      }
+    ],
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      },
+      {
+        "url": "https://github.com/heroku/heroku-buildpack-cli.git"
+      }
+    ],
+    "scripts": {
+      "postdeploy": "./setup"
+    }
+  }
